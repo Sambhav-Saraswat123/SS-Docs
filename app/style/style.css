@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f3f3f3;
+  margin: 0;
+}
+
+.container .ql-editor {
+  width: 8.5in;
+  min-height: 11in;
+  padding: 1in;
+  margin: 1rem;
+  background: #fff;
+}
+
+.container {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ql-container.ql-snow {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ql-toolbar.ql-snow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f3f3f3;
+  border-bottom: 0.25px solid #cecdcd;
+}
+
+@media print {
+  body {
+    background: none;
+  }
+  .ql-editor {
+    width: 6.5in;
+    height: 9in;
+    padding: 0;
+    margin: 1in;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .ql-toolbar.ql-snow {
+    display: none;
+  }
+  #save {
+    display: none;
+  }
+}
+
+#save {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  margin-top: 11px;
+  left: 957px;
+  background: none;
+  border: none;
+  font-family: Gotham Rounded, Arial Rounded MT, Arial, sans-serif;
+  cursor: pointer;
+  color: #444;
+}
+
+#save:hover {
+  color: #0066cc;
+}
+/*# sourceMappingURL=style.css.map */
